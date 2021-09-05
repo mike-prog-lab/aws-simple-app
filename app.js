@@ -1,7 +1,6 @@
 const express = require("express");
-const configuration = require("./src/repository/configuration.repository.js");
 
-const PORT = configuration.getAppPort();
+const PORT = process.env.PORT;
 
 const app = express();
 
